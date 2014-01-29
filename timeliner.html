@@ -28,10 +28,19 @@
 					<dt id="19540517"><a>Brown v. Board of Education</a></dt>
 					<dd class="timelineEvent" id="19540517EX" style="display:none;">
 						<h3>May 17, 1954</h3>
-						<p>
-							The U.S. Supreme Court hands down a unanimous 9-0 decision in the Brown v. Board of Education of Topeka case, opening the door for the civil timelineMajor-rights movement and ultimately racial integration in all aspects of U.S. society. In overturning Plessy v. Ferguson (1896), the court rules that “separate educational facilities are inherently unequal.”<sup>1</sup></p>
 
-							<br class="clear">
+                        <div class="media">
+                            <a class='iframe' href="programming-ruby-1-9_p5_0_EDIT.pdf">Outside Webpage (Iframe)</a>
+                            <!--
+                            <iframe width="240px" height="320px" style="cursor: pointer;" src="programming-ruby-1-9_p5_0_EDIT.pdf"></iframe>
+                            -->
+                        </div><!-- /.media -->
+
+                        <p>
+                            The U.S. Supreme Court hands down a unanimous 9-0 decision in the Brown v. Board of Education of Topeka case, opening the door for the civil timelineMajor-rights movement and ultimately racial integration in all aspects of U.S. society. In overturning Plessy v. Ferguson (1896), the court rules that “separate educational facilities are inherently unequal.”<sup>1</sup>
+                        </p>
+
+						<br class="clear">
 					</dd><!-- /.timelineEvent -->
 				</dl><!-- /.timelineMinor -->
 			</div><!-- /.timelineMajor -->
@@ -210,13 +219,14 @@
 	<script>
 		$(document).ready(function() {
 			$.timeliner({
-				startOpen:['#19550828EX', '#19630828EX']
+				startOpen:['#19540517EX']
 			});
 			$.timeliner({
 				timelineContainer: '#timelineContainer_2'
 			});
 			// Colorbox Modal
 			$(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+            $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
 		});
 	</script>
 
